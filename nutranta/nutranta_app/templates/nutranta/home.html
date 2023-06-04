@@ -74,9 +74,84 @@
 </div>
 <!-- End Payment Info Section -->
 
+
+
+
+
+
+
+
+
+<section class="features container" id="features">
+
+    <h1 class="heading text-center"> Our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/product/milk.jpg' %}" alt="">
+            <h3>Edible Items</h3>
+            <p>Buy a wide variety of ready to eat meals in packaged food products.</p>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/product/feature-img-2.png' %}" alt="">
+            <h3>Free delivery</h3>
+            <p>Sharing food with another human being is an intimate act that should not be indulged in lightly.</p>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/product/feature-img-3.png' %}" alt="">
+            <h3>Easy payments</h3>
+            <p>Cash On delivery</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section starts  -->
+
+<section class="categories container" id="categories">
+
+    <h1 class="heading text-center"> Product <span>Categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/product/feature-img-1.png' %}" alt="">
+            <h3> Vegetables</h3>
+            <a href="{% url 'productdata' 'Vegetables' %}" class="btn btn-primary p-2">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/product/fruits.jpg' %}" alt="" width='250px'>
+            <h3> Fruits</h3>
+            <a href="{% url 'productdata' 'Fruits' %}" class="btn btn-primary p-2">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/product/cat-3.png' %}" alt="">
+            <h3>Dairy products</h3>
+            <a href="{% url 'productdata' 'Dairy' %}" class="btn btn-primary p-2">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/product/cat-4.png' %}" alt="">
+            <h3>Fresh Meat</h3>
+            <a href="{% url 'productdata' 'Fish' %}" class="btn btn-primary p-2">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+
 <!-- 2nd Product Slider -->
 <div class="mx-3">
-  <h1 class="heading text-center"> Our <span>Product</span> </h1>
+  <h1 class="heading text-center"> Latest <span>Product</span> </h1>
   <!-- Slider 2 -->
     <div class="owl-carousel" id="slider2">
     {% for product in all_Products %}
